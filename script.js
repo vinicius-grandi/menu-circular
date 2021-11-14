@@ -1,5 +1,11 @@
 let icons = document.querySelectorAll('.icons')
 let aicons = Array.from(icons)
+let menu = document.querySelectorAll(".menu")
+
+menu.forEach(
+    (el) => {el.addEventListener('mouseenter', showicon)
+             el.addEventListener('mouseout', showicon)}
+)
 
 function showicon() {
     if(verify()) {

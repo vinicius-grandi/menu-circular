@@ -6,6 +6,7 @@
     border-radius: 50%;
     margin: auto;
     z-index: 0;
+    padding: 50px;
 }
 
 #s-menu {
@@ -22,7 +23,7 @@
 }
 
 .item1 {
-    background-Color: rgb(155, 37, 37);
+    background-Color: #EDF509;
     width: 500px;
     height: 500px;
     position: absolute;
@@ -31,12 +32,16 @@
     z-index: 3;
 }
 
+.item1:hover {
+    background-Color: hsl(62, 93%, 20%);
+}
+
 .item1:hover + #i1 {
     z-index: 8;
 }
 
 .item2 {
-    background-color: rgb(223, 226, 29);
+    background-color: #DB0F16;
     width: 500px;
     height: 500px;
     position: absolute;
@@ -45,12 +50,16 @@
     z-index: 2;    
 }
 
+.item2:hover {
+    background-color: hsl(358, 87%, 20%);
+}
+
 .item2:hover + #i2 {
     z-index: 8;
 }
 
 .item3 {
-    background-color: rgb(57, 155, 37);
+    background-color: #69DDF0;
     width: 500px;
     height: 500px;
     position: absolute;
@@ -59,18 +68,26 @@
     z-index: 4;
 }
 
+.item3:hover {
+    background-color: hsl(188, 82%, 20%);
+}
+
 .item3:hover + #i3 {
     z-index: 5;
 }
 
 .item4 {
-    background-color: rgb(37, 49, 155);
+    background-color: #00EB25;
     width: 500px;
     height: 500px;
     position: absolute;
     border-radius: 50%;
     clip-path: ellipse(452% 13% at 70% 89%);
     z-index: 1;
+}
+
+.item4:hover {
+    background-color: hsl(129, 100%, 20%);
 }
 
 .item4:hover + #i4 {
@@ -82,15 +99,12 @@
     
 }
 
-.menu:hover {
-    background-color: aqua;
-}
-
 div > img {
     position: absolute;
+    z-index: 8;
+    left: 33%;
+    top: 33%;
     z-index: 0;
-    left: 30%;
-    top: 30%;
 }
 
 @media (max-width: 550px) {
